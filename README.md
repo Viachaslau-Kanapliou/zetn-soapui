@@ -1,6 +1,8 @@
 SoapUI client for ZETN
 
-Full Identity configured, WSDLs pulled in. RSI Preferences and Search configured, WSDLs pulled in.
+Development environment: Full Identity configured, WSDLs pulled in. RSI Preferences and Search configured, WSDLs pulled in.
+
+Project file: dev-soapui-project.xml
 
 Test suite Tests, test case Basic. Currently available:
 * getImplementationVersion
