@@ -34770,7 +34770,2181 @@
          <rsi:searchId>?</rsi:searchId>\r
       </rsi:searchWithinSearchClustered>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/rsi/Search/searchWithinSearchClustered"/></con:call></con:operation></con:interface><con:testSuite id="814e86fd-17da-4ef7-90f7-50ef8c2135ca" name="Tests"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c928400a-ded3-4501-8131-1f9a0541042f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Basics" searchProperties="true"><con:settings/><con:testStep type="request" id="24480bfe-b515-47df-af1c-492c6b2e047b" name="getImplementationVersion - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IDiagnostics</con:interface><con:operation>getImplementationVersion</con:operation><con:request name="getImplementationVersion - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="54f6334f-c9e0-420a-90c5-d8b56b8fc6a6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_identity_wcf/Diagnostics.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/rsi/Search/searchWithinSearchClustered"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="14abae33-5264-47f9-bebb-2a386e30a6b2" wsaVersion="NONE" name="BasicHttpBinding_IAuthorization" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IAuthorization" soapVersion="1_1" anonymous="optional" definition="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?wsdl"><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="Authorization" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://services.wolterskluwer.com/urm" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://services.wolterskluwer.com/urm" location="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?wsdl=wsdl0"/>
+  <wsdl:types/>
+  <wsdl:binding name="BasicHttpBinding_IAuthorization" type="i0:IAuthorization">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="isAuthorized">
+      <soap:operation soapAction="http://services.wolterskluwer.com/urm/Authorization/isAuthorized" style="document"/>
+      <wsdl:input name="IsAuthorized">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="IsAuthorizedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="domainVersionMismatch">
+        <soap:fault name="domainVersionMismatch" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="commonClientFault">
+        <soap:fault name="commonClientFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="unexpectedServerFault">
+        <soap:fault name="unexpectedServerFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersForProduct">
+      <soap:operation soapAction="http://services.wolterskluwer.com/urm/Authorization/getUsersForProduct" style="document"/>
+      <wsdl:input name="GetUsersForProduct">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetUsersForProductResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="invalidIdFault">
+        <soap:fault name="invalidIdFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="commonClientFault">
+        <soap:fault name="commonClientFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="domainVersionMismatch">
+        <soap:fault name="domainVersionMismatch" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="unexpectedServerFault">
+        <soap:fault name="unexpectedServerFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSubscribedProducts">
+      <soap:operation soapAction="http://services.wolterskluwer.com/urm/Authorization/getSubscribedProducts" style="document"/>
+      <wsdl:input name="GetSubscribedProducts">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetSubscribedProductsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="unexpectedServerFault">
+        <soap:fault name="unexpectedServerFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="commonClientFault">
+        <soap:fault name="commonClientFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="domainVersionMismatch">
+        <soap:fault name="domainVersionMismatch" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSubscribedProductsForUsers">
+      <soap:operation soapAction="http://services.wolterskluwer.com/urm/Authorization/getSubscribedProductsForUsers" style="document"/>
+      <wsdl:input name="GetSubscribedProductsForUsers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetSubscribedProductsForUsersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="commonClientFault">
+        <soap:fault name="commonClientFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="idNotFoundFault">
+        <soap:fault name="idNotFoundFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="domainVersionMismatch">
+        <soap:fault name="domainVersionMismatch" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="unexpectedServerFault">
+        <soap:fault name="unexpectedServerFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="searchUsers">
+      <soap:operation soapAction="http://services.wolterskluwer.com/urm/Authorization/searchUsers" style="document"/>
+      <wsdl:input name="SearchUsers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="SearchUsersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="unexpectedServerFault">
+        <soap:fault name="unexpectedServerFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="commonClientFault">
+        <soap:fault name="commonClientFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidUserFault">
+        <soap:fault name="invalidUserFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="domainVersionMismatch">
+        <soap:fault name="domainVersionMismatch" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="assignPermissionToUsers">
+      <soap:operation soapAction="http://services.wolterskluwer.com/urm/Authorization/assignPermissionToUsers" style="document"/>
+      <wsdl:input name="AssignPermissionToUsers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="AssignPermissionToUsersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="unexpectedServerFault">
+        <soap:fault name="unexpectedServerFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="commonClientFault">
+        <soap:fault name="commonClientFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidIdFault">
+        <soap:fault name="invalidIdFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidUserFault">
+        <soap:fault name="invalidUserFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidFilterSyntaxFault">
+        <soap:fault name="invalidFilterSyntaxFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidTypeFault">
+        <soap:fault name="invalidTypeFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="domainVersionMismatch">
+        <soap:fault name="domainVersionMismatch" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAllPermissionsForUser">
+      <soap:operation soapAction="http://services.wolterskluwer.com/urm/Authorization/getAllPermissionsForUser" style="document"/>
+      <wsdl:input name="GetAllPermissionsForUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetAllPermissionsForUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="unexpectedServerFault">
+        <soap:fault name="unexpectedServerFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="commonClientFault">
+        <soap:fault name="commonClientFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidIdFault">
+        <soap:fault name="invalidIdFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="domainVersionMismatch">
+        <soap:fault name="domainVersionMismatch" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersWithPermission">
+      <soap:operation soapAction="http://services.wolterskluwer.com/urm/Authorization/getUsersWithPermission" style="document"/>
+      <wsdl:input name="GetUsersWithPermission">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetUsersWithPermissionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="domainVersionMismatch">
+        <soap:fault name="domainVersionMismatch" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="unexpectedServerFault">
+        <soap:fault name="unexpectedServerFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="commonClientFault">
+        <soap:fault name="commonClientFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidIdFault">
+        <soap:fault name="invalidIdFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidFilterSyntaxFault">
+        <soap:fault name="invalidFilterSyntaxFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidTypeFault">
+        <soap:fault name="invalidTypeFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="revokePermission">
+      <soap:operation soapAction="http://services.wolterskluwer.com/urm/Authorization/revokePermission" style="document"/>
+      <wsdl:input name="RevokePermission">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="RevokePermissionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="unexpectedServerFault">
+        <soap:fault name="unexpectedServerFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="domainVersionMismatch">
+        <soap:fault name="domainVersionMismatch" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="commonClientFault">
+        <soap:fault name="commonClientFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidIdFault">
+        <soap:fault name="invalidIdFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidUserFault">
+        <soap:fault name="invalidUserFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidFilterSyntaxFault">
+        <soap:fault name="invalidFilterSyntaxFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidTypeFault">
+        <soap:fault name="invalidTypeFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getRights">
+      <soap:operation soapAction="http://services.wolterskluwer.com/urm/Authorization/getRights" style="document"/>
+      <wsdl:input name="GetRights">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetRightsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="domainVersionMismatch">
+        <soap:fault name="domainVersionMismatch" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="unexpectedServerFault">
+        <soap:fault name="unexpectedServerFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="commonClientFault">
+        <soap:fault name="commonClientFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidUserFault">
+        <soap:fault name="invalidUserFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getRightsForUser">
+      <soap:operation soapAction="http://services.wolterskluwer.com/urm/Authorization/getRightsForUser" style="document"/>
+      <wsdl:input name="GetRightsForUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetRightsForUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="unexpectedServerFault">
+        <soap:fault name="unexpectedServerFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="commonClientFault">
+        <soap:fault name="commonClientFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="invalidUserFault">
+        <soap:fault name="invalidUserFault" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="domainVersionMismatch">
+        <soap:fault name="domainVersionMismatch" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Authorization">
+    <wsdl:port name="BasicHttpBinding_IAuthorization" binding="tns:BasicHttpBinding_IAuthorization">
+      <soap:address location="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?wsdl=wsdl0</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://services.wolterskluwer.com/urm" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/urm" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://services.wolterskluwer.com/urm/Imports">
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd0" namespace="http://services.wolterskluwer.com/docs/urm"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd7" namespace="http://services.wolterskluwer.com/osa/transform"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd1" namespace="http://services.wolterskluwer.com/docs/common"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd2" namespace="http://services.wolterskluwer.com/types/message"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd3" namespace="http://services.wolterskluwer.com/types/common"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd4" namespace="http://services.wolterskluwer.com/types/products"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd5" namespace="http://services.wolterskluwer.com/types/diagnostics"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd6" namespace="http://services.wolterskluwer.com/types/batch"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd8"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd9" namespace="http://services.wolterskluwer.com/docs/diagnostics"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd10" namespace="http://services.wolterskluwer.com/docs/batch"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd11" namespace="http://services.wolterskluwer.com/types/capabilities"/>
+      <xsd:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd12" namespace="http://services.wolterskluwer.com/types/rights"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IsAuthorized">
+    <wsdl:part name="parameters" element="q1:isAuthorized" xmlns:q1="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IsAuthorizedResponse">
+    <wsdl:part name="parameters" element="q2:isAuthorizedResponse" xmlns:q2="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_isAuthorized_domainVersionMismatch_FaultMessage">
+    <wsdl:part name="detail" element="q3:domainVersionMismatch" xmlns:q3="http://services.wolterskluwer.com/osa/transform"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_isAuthorized_commonClientFault_FaultMessage">
+    <wsdl:part name="detail" element="q4:commonClientFault" xmlns:q4="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_isAuthorized_unexpectedServerFault_FaultMessage">
+    <wsdl:part name="detail" element="q5:unexpectedServerFault" xmlns:q5="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="GetUsersForProduct">
+    <wsdl:part name="parameters" element="q6:getUsersForProduct" xmlns:q6="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="GetUsersForProductResponse">
+    <wsdl:part name="parameters" element="q7:getUsersForProductResponse" xmlns:q7="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getUsersForProduct_invalidIdFault_FaultMessage">
+    <wsdl:part name="detail" element="q8:invalidIdFault" xmlns:q8="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getUsersForProduct_commonClientFault_FaultMessage">
+    <wsdl:part name="detail" element="q9:commonClientFault" xmlns:q9="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getUsersForProduct_domainVersionMismatch_FaultMessage">
+    <wsdl:part name="detail" element="q10:domainVersionMismatch" xmlns:q10="http://services.wolterskluwer.com/osa/transform"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getUsersForProduct_unexpectedServerFault_FaultMessage">
+    <wsdl:part name="detail" element="q11:unexpectedServerFault" xmlns:q11="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="GetSubscribedProducts">
+    <wsdl:part name="parameters" element="q12:getSubscribedProducts" xmlns:q12="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="GetSubscribedProductsResponse">
+    <wsdl:part name="parameters" element="q13:getSubscribedProductsResponse" xmlns:q13="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getSubscribedProducts_unexpectedServerFault_FaultMessage">
+    <wsdl:part name="detail" element="q14:unexpectedServerFault" xmlns:q14="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getSubscribedProducts_commonClientFault_FaultMessage">
+    <wsdl:part name="detail" element="q15:commonClientFault" xmlns:q15="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getSubscribedProducts_domainVersionMismatch_FaultMessage">
+    <wsdl:part name="detail" element="q16:domainVersionMismatch" xmlns:q16="http://services.wolterskluwer.com/osa/transform"/>
+  </wsdl:message>
+  <wsdl:message name="GetSubscribedProductsForUsers">
+    <wsdl:part name="parameters" element="q17:getSubscribedProductsForUsers" xmlns:q17="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="GetSubscribedProductsForUsersResponse">
+    <wsdl:part name="parameters" element="q18:getSubscribedProductsForUsersResponse" xmlns:q18="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getSubscribedProductsForUsers_commonClientFault_FaultMessage">
+    <wsdl:part name="detail" element="q19:commonClientFault" xmlns:q19="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getSubscribedProductsForUsers_idNotFoundFault_FaultMessage">
+    <wsdl:part name="detail" element="q20:idNotFoundFault" xmlns:q20="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getSubscribedProductsForUsers_domainVersionMismatch_FaultMessage">
+    <wsdl:part name="detail" element="q21:domainVersionMismatch" xmlns:q21="http://services.wolterskluwer.com/osa/transform"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getSubscribedProductsForUsers_unexpectedServerFault_FaultMessage">
+    <wsdl:part name="detail" element="q22:unexpectedServerFault" xmlns:q22="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="SearchUsers">
+    <wsdl:part name="parameters" element="q23:searchUsers" xmlns:q23="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="SearchUsersResponse">
+    <wsdl:part name="parameters" element="q24:searchUsersResponse" xmlns:q24="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_searchUsers_unexpectedServerFault_FaultMessage">
+    <wsdl:part name="detail" element="q25:unexpectedServerFault" xmlns:q25="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_searchUsers_commonClientFault_FaultMessage">
+    <wsdl:part name="detail" element="q26:commonClientFault" xmlns:q26="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_searchUsers_invalidUserFault_FaultMessage">
+    <wsdl:part name="detail" element="q27:invalidUserFault" xmlns:q27="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_searchUsers_domainVersionMismatch_FaultMessage">
+    <wsdl:part name="detail" element="q28:domainVersionMismatch" xmlns:q28="http://services.wolterskluwer.com/osa/transform"/>
+  </wsdl:message>
+  <wsdl:message name="AssignPermissionToUsers">
+    <wsdl:part name="parameters" element="q29:assignPermissionToUsers" xmlns:q29="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="AssignPermissionToUsersResponse">
+    <wsdl:part name="parameters" element="q30:assignPermissionToUsersResponse" xmlns:q30="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_assignPermissionToUsers_unexpectedServerFault_FaultMessage">
+    <wsdl:part name="detail" element="q31:unexpectedServerFault" xmlns:q31="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_assignPermissionToUsers_commonClientFault_FaultMessage">
+    <wsdl:part name="detail" element="q32:commonClientFault" xmlns:q32="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_assignPermissionToUsers_invalidIdFault_FaultMessage">
+    <wsdl:part name="detail" element="q33:invalidIdFault" xmlns:q33="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_assignPermissionToUsers_invalidUserFault_FaultMessage">
+    <wsdl:part name="detail" element="q34:invalidUserFault" xmlns:q34="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_assignPermissionToUsers_invalidFilterSyntaxFault_FaultMessage">
+    <wsdl:part name="detail" element="q35:invalidFilterSyntaxFault" xmlns:q35="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_assignPermissionToUsers_invalidTypeFault_FaultMessage">
+    <wsdl:part name="detail" element="q36:invalidTypeFault" xmlns:q36="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_assignPermissionToUsers_domainVersionMismatch_FaultMessage">
+    <wsdl:part name="detail" element="q37:domainVersionMismatch" xmlns:q37="http://services.wolterskluwer.com/osa/transform"/>
+  </wsdl:message>
+  <wsdl:message name="GetAllPermissionsForUser">
+    <wsdl:part name="parameters" element="q38:getAllPermissionsForUser" xmlns:q38="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="GetAllPermissionsForUserResponse">
+    <wsdl:part name="parameters" element="q39:getAllPermissionsForUserResponse" xmlns:q39="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getAllPermissionsForUser_unexpectedServerFault_FaultMessage">
+    <wsdl:part name="detail" element="q40:unexpectedServerFault" xmlns:q40="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getAllPermissionsForUser_commonClientFault_FaultMessage">
+    <wsdl:part name="detail" element="q41:commonClientFault" xmlns:q41="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getAllPermissionsForUser_invalidIdFault_FaultMessage">
+    <wsdl:part name="detail" element="q42:invalidIdFault" xmlns:q42="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getAllPermissionsForUser_domainVersionMismatch_FaultMessage">
+    <wsdl:part name="detail" element="q43:domainVersionMismatch" xmlns:q43="http://services.wolterskluwer.com/osa/transform"/>
+  </wsdl:message>
+  <wsdl:message name="GetUsersWithPermission">
+    <wsdl:part name="parameters" element="q44:getUsersWithPermission" xmlns:q44="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="GetUsersWithPermissionResponse">
+    <wsdl:part name="parameters" element="q45:getUsersWithPermissionResponse" xmlns:q45="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getUsersWithPermission_domainVersionMismatch_FaultMessage">
+    <wsdl:part name="detail" element="q46:domainVersionMismatch" xmlns:q46="http://services.wolterskluwer.com/osa/transform"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getUsersWithPermission_unexpectedServerFault_FaultMessage">
+    <wsdl:part name="detail" element="q47:unexpectedServerFault" xmlns:q47="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getUsersWithPermission_commonClientFault_FaultMessage">
+    <wsdl:part name="detail" element="q48:commonClientFault" xmlns:q48="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getUsersWithPermission_invalidIdFault_FaultMessage">
+    <wsdl:part name="detail" element="q49:invalidIdFault" xmlns:q49="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getUsersWithPermission_invalidFilterSyntaxFault_FaultMessage">
+    <wsdl:part name="detail" element="q50:invalidFilterSyntaxFault" xmlns:q50="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getUsersWithPermission_invalidTypeFault_FaultMessage">
+    <wsdl:part name="detail" element="q51:invalidTypeFault" xmlns:q51="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="RevokePermission">
+    <wsdl:part name="parameters" element="q52:revokePermission" xmlns:q52="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="RevokePermissionResponse">
+    <wsdl:part name="parameters" element="q53:revokePermissionResponse" xmlns:q53="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_revokePermission_unexpectedServerFault_FaultMessage">
+    <wsdl:part name="detail" element="q54:unexpectedServerFault" xmlns:q54="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_revokePermission_domainVersionMismatch_FaultMessage">
+    <wsdl:part name="detail" element="q55:domainVersionMismatch" xmlns:q55="http://services.wolterskluwer.com/osa/transform"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_revokePermission_commonClientFault_FaultMessage">
+    <wsdl:part name="detail" element="q56:commonClientFault" xmlns:q56="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_revokePermission_invalidIdFault_FaultMessage">
+    <wsdl:part name="detail" element="q57:invalidIdFault" xmlns:q57="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_revokePermission_invalidUserFault_FaultMessage">
+    <wsdl:part name="detail" element="q58:invalidUserFault" xmlns:q58="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_revokePermission_invalidFilterSyntaxFault_FaultMessage">
+    <wsdl:part name="detail" element="q59:invalidFilterSyntaxFault" xmlns:q59="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_revokePermission_invalidTypeFault_FaultMessage">
+    <wsdl:part name="detail" element="q60:invalidTypeFault" xmlns:q60="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="GetRights">
+    <wsdl:part name="parameters" element="q61:getRights" xmlns:q61="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="GetRightsResponse">
+    <wsdl:part name="parameters" element="q62:getRightsResponse" xmlns:q62="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getRights_domainVersionMismatch_FaultMessage">
+    <wsdl:part name="detail" element="q63:domainVersionMismatch" xmlns:q63="http://services.wolterskluwer.com/osa/transform"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getRights_unexpectedServerFault_FaultMessage">
+    <wsdl:part name="detail" element="q64:unexpectedServerFault" xmlns:q64="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getRights_commonClientFault_FaultMessage">
+    <wsdl:part name="detail" element="q65:commonClientFault" xmlns:q65="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getRights_invalidUserFault_FaultMessage">
+    <wsdl:part name="detail" element="q66:invalidUserFault" xmlns:q66="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="GetRightsForUser">
+    <wsdl:part name="parameters" element="q67:getRightsForUser" xmlns:q67="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="GetRightsForUserResponse">
+    <wsdl:part name="parameters" element="q68:getRightsForUserResponse" xmlns:q68="http://services.wolterskluwer.com/docs/urm"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getRightsForUser_unexpectedServerFault_FaultMessage">
+    <wsdl:part name="detail" element="q69:unexpectedServerFault" xmlns:q69="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getRightsForUser_commonClientFault_FaultMessage">
+    <wsdl:part name="detail" element="q70:commonClientFault" xmlns:q70="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getRightsForUser_invalidUserFault_FaultMessage">
+    <wsdl:part name="detail" element="q71:invalidUserFault" xmlns:q71="http://services.wolterskluwer.com/docs/common"/>
+  </wsdl:message>
+  <wsdl:message name="IAuthorization_getRightsForUser_domainVersionMismatch_FaultMessage">
+    <wsdl:part name="detail" element="q72:domainVersionMismatch" xmlns:q72="http://services.wolterskluwer.com/osa/transform"/>
+  </wsdl:message>
+  <wsdl:portType name="IAuthorization">
+    <wsdl:operation name="isAuthorized">
+      <wsdl:input wsaw:Action="http://services.wolterskluwer.com/urm/Authorization/isAuthorized" name="IsAuthorized" message="tns:IsAuthorized"/>
+      <wsdl:output wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/isAuthorizedResponse" name="IsAuthorizedResponse" message="tns:IsAuthorizedResponse"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/isAuthorizeddomainVersionMismatch" name="domainVersionMismatch" message="tns:IAuthorization_isAuthorized_domainVersionMismatch_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/isAuthorizedcommonClientFault" name="commonClientFault" message="tns:IAuthorization_isAuthorized_commonClientFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/isAuthorizedunexpectedServerFault" name="unexpectedServerFault" message="tns:IAuthorization_isAuthorized_unexpectedServerFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersForProduct">
+      <wsdl:input wsaw:Action="http://services.wolterskluwer.com/urm/Authorization/getUsersForProduct" name="GetUsersForProduct" message="tns:GetUsersForProduct"/>
+      <wsdl:output wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersForProductResponse" name="GetUsersForProductResponse" message="tns:GetUsersForProductResponse"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersForProductinvalidIdFault" name="invalidIdFault" message="tns:IAuthorization_getUsersForProduct_invalidIdFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersForProductcommonClientFault" name="commonClientFault" message="tns:IAuthorization_getUsersForProduct_commonClientFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersForProductdomainVersionMismatch" name="domainVersionMismatch" message="tns:IAuthorization_getUsersForProduct_domainVersionMismatch_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersForProductunexpectedServerFault" name="unexpectedServerFault" message="tns:IAuthorization_getUsersForProduct_unexpectedServerFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getSubscribedProducts">
+      <wsdl:input wsaw:Action="http://services.wolterskluwer.com/urm/Authorization/getSubscribedProducts" name="GetSubscribedProducts" message="tns:GetSubscribedProducts"/>
+      <wsdl:output wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getSubscribedProductsResponse" name="GetSubscribedProductsResponse" message="tns:GetSubscribedProductsResponse"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getSubscribedProductsunexpectedServerFault" name="unexpectedServerFault" message="tns:IAuthorization_getSubscribedProducts_unexpectedServerFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getSubscribedProductscommonClientFault" name="commonClientFault" message="tns:IAuthorization_getSubscribedProducts_commonClientFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getSubscribedProductsdomainVersionMismatch" name="domainVersionMismatch" message="tns:IAuthorization_getSubscribedProducts_domainVersionMismatch_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getSubscribedProductsForUsers">
+      <wsdl:input wsaw:Action="http://services.wolterskluwer.com/urm/Authorization/getSubscribedProductsForUsers" name="GetSubscribedProductsForUsers" message="tns:GetSubscribedProductsForUsers"/>
+      <wsdl:output wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getSubscribedProductsForUsersResponse" name="GetSubscribedProductsForUsersResponse" message="tns:GetSubscribedProductsForUsersResponse"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getSubscribedProductsForUserscommonClientFault" name="commonClientFault" message="tns:IAuthorization_getSubscribedProductsForUsers_commonClientFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getSubscribedProductsForUsersidNotFoundFault" name="idNotFoundFault" message="tns:IAuthorization_getSubscribedProductsForUsers_idNotFoundFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getSubscribedProductsForUsersdomainVersionMismatch" name="domainVersionMismatch" message="tns:IAuthorization_getSubscribedProductsForUsers_domainVersionMismatch_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getSubscribedProductsForUsersunexpectedServerFault" name="unexpectedServerFault" message="tns:IAuthorization_getSubscribedProductsForUsers_unexpectedServerFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="searchUsers">
+      <wsdl:input wsaw:Action="http://services.wolterskluwer.com/urm/Authorization/searchUsers" name="SearchUsers" message="tns:SearchUsers"/>
+      <wsdl:output wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/searchUsersResponse" name="SearchUsersResponse" message="tns:SearchUsersResponse"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/searchUsersunexpectedServerFault" name="unexpectedServerFault" message="tns:IAuthorization_searchUsers_unexpectedServerFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/searchUserscommonClientFault" name="commonClientFault" message="tns:IAuthorization_searchUsers_commonClientFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/searchUsersinvalidUserFault" name="invalidUserFault" message="tns:IAuthorization_searchUsers_invalidUserFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/searchUsersdomainVersionMismatch" name="domainVersionMismatch" message="tns:IAuthorization_searchUsers_domainVersionMismatch_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="assignPermissionToUsers">
+      <wsdl:input wsaw:Action="http://services.wolterskluwer.com/urm/Authorization/assignPermissionToUsers" name="AssignPermissionToUsers" message="tns:AssignPermissionToUsers"/>
+      <wsdl:output wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/assignPermissionToUsersResponse" name="AssignPermissionToUsersResponse" message="tns:AssignPermissionToUsersResponse"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/assignPermissionToUsersunexpectedServerFault" name="unexpectedServerFault" message="tns:IAuthorization_assignPermissionToUsers_unexpectedServerFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/assignPermissionToUserscommonClientFault" name="commonClientFault" message="tns:IAuthorization_assignPermissionToUsers_commonClientFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/assignPermissionToUsersinvalidIdFault" name="invalidIdFault" message="tns:IAuthorization_assignPermissionToUsers_invalidIdFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/assignPermissionToUsersinvalidUserFault" name="invalidUserFault" message="tns:IAuthorization_assignPermissionToUsers_invalidUserFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/assignPermissionToUsersinvalidFilterSyntaxFault" name="invalidFilterSyntaxFault" message="tns:IAuthorization_assignPermissionToUsers_invalidFilterSyntaxFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/assignPermissionToUsersinvalidTypeFault" name="invalidTypeFault" message="tns:IAuthorization_assignPermissionToUsers_invalidTypeFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/assignPermissionToUsersdomainVersionMismatch" name="domainVersionMismatch" message="tns:IAuthorization_assignPermissionToUsers_domainVersionMismatch_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getAllPermissionsForUser">
+      <wsdl:input wsaw:Action="http://services.wolterskluwer.com/urm/Authorization/getAllPermissionsForUser" name="GetAllPermissionsForUser" message="tns:GetAllPermissionsForUser"/>
+      <wsdl:output wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getAllPermissionsForUserResponse" name="GetAllPermissionsForUserResponse" message="tns:GetAllPermissionsForUserResponse"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getAllPermissionsForUserunexpectedServerFault" name="unexpectedServerFault" message="tns:IAuthorization_getAllPermissionsForUser_unexpectedServerFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getAllPermissionsForUsercommonClientFault" name="commonClientFault" message="tns:IAuthorization_getAllPermissionsForUser_commonClientFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getAllPermissionsForUserinvalidIdFault" name="invalidIdFault" message="tns:IAuthorization_getAllPermissionsForUser_invalidIdFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getAllPermissionsForUserdomainVersionMismatch" name="domainVersionMismatch" message="tns:IAuthorization_getAllPermissionsForUser_domainVersionMismatch_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersWithPermission">
+      <wsdl:input wsaw:Action="http://services.wolterskluwer.com/urm/Authorization/getUsersWithPermission" name="GetUsersWithPermission" message="tns:GetUsersWithPermission"/>
+      <wsdl:output wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersWithPermissionResponse" name="GetUsersWithPermissionResponse" message="tns:GetUsersWithPermissionResponse"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersWithPermissiondomainVersionMismatch" name="domainVersionMismatch" message="tns:IAuthorization_getUsersWithPermission_domainVersionMismatch_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersWithPermissionunexpectedServerFault" name="unexpectedServerFault" message="tns:IAuthorization_getUsersWithPermission_unexpectedServerFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersWithPermissioncommonClientFault" name="commonClientFault" message="tns:IAuthorization_getUsersWithPermission_commonClientFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersWithPermissioninvalidIdFault" name="invalidIdFault" message="tns:IAuthorization_getUsersWithPermission_invalidIdFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersWithPermissioninvalidFilterSyntaxFault" name="invalidFilterSyntaxFault" message="tns:IAuthorization_getUsersWithPermission_invalidFilterSyntaxFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getUsersWithPermissioninvalidTypeFault" name="invalidTypeFault" message="tns:IAuthorization_getUsersWithPermission_invalidTypeFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="revokePermission">
+      <wsdl:input wsaw:Action="http://services.wolterskluwer.com/urm/Authorization/revokePermission" name="RevokePermission" message="tns:RevokePermission"/>
+      <wsdl:output wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/revokePermissionResponse" name="RevokePermissionResponse" message="tns:RevokePermissionResponse"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/revokePermissionunexpectedServerFault" name="unexpectedServerFault" message="tns:IAuthorization_revokePermission_unexpectedServerFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/revokePermissiondomainVersionMismatch" name="domainVersionMismatch" message="tns:IAuthorization_revokePermission_domainVersionMismatch_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/revokePermissioncommonClientFault" name="commonClientFault" message="tns:IAuthorization_revokePermission_commonClientFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/revokePermissioninvalidIdFault" name="invalidIdFault" message="tns:IAuthorization_revokePermission_invalidIdFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/revokePermissioninvalidUserFault" name="invalidUserFault" message="tns:IAuthorization_revokePermission_invalidUserFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/revokePermissioninvalidFilterSyntaxFault" name="invalidFilterSyntaxFault" message="tns:IAuthorization_revokePermission_invalidFilterSyntaxFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/revokePermissioninvalidTypeFault" name="invalidTypeFault" message="tns:IAuthorization_revokePermission_invalidTypeFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getRights">
+      <wsdl:input wsaw:Action="http://services.wolterskluwer.com/urm/Authorization/getRights" name="GetRights" message="tns:GetRights"/>
+      <wsdl:output wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getRightsResponse" name="GetRightsResponse" message="tns:GetRightsResponse"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getRightsdomainVersionMismatch" name="domainVersionMismatch" message="tns:IAuthorization_getRights_domainVersionMismatch_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getRightsunexpectedServerFault" name="unexpectedServerFault" message="tns:IAuthorization_getRights_unexpectedServerFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getRightscommonClientFault" name="commonClientFault" message="tns:IAuthorization_getRights_commonClientFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getRightsinvalidUserFault" name="invalidUserFault" message="tns:IAuthorization_getRights_invalidUserFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="getRightsForUser">
+      <wsdl:input wsaw:Action="http://services.wolterskluwer.com/urm/Authorization/getRightsForUser" name="GetRightsForUser" message="tns:GetRightsForUser"/>
+      <wsdl:output wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getRightsForUserResponse" name="GetRightsForUserResponse" message="tns:GetRightsForUserResponse"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getRightsForUserunexpectedServerFault" name="unexpectedServerFault" message="tns:IAuthorization_getRightsForUser_unexpectedServerFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getRightsForUsercommonClientFault" name="commonClientFault" message="tns:IAuthorization_getRightsForUser_commonClientFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getRightsForUserinvalidUserFault" name="invalidUserFault" message="tns:IAuthorization_getRightsForUser_invalidUserFault_FaultMessage"/>
+      <wsdl:fault wsaw:Action="http://services.wolterskluwer.com/urm/IAuthorization/getRightsForUserdomainVersionMismatch" name="domainVersionMismatch" message="tns:IAuthorization_getRightsForUser_domainVersionMismatch_FaultMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/docs/urm" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/docs/urm">
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd1" namespace="http://services.wolterskluwer.com/docs/common"/>
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd4" namespace="http://services.wolterskluwer.com/types/products"/>
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd3" namespace="http://services.wolterskluwer.com/types/common"/>
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd12" namespace="http://services.wolterskluwer.com/types/rights"/>
+  <xs:element name="isAuthorized">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q1:requestInfo" xmlns:q1="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="resource" type="q2:resourceId" xmlns:q2="http://services.wolterskluwer.com/types/products"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isAuthorizedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q3:responseInfo" xmlns:q3="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="authorizations" type="q4:resourceAuthorization" xmlns:q4="http://services.wolterskluwer.com/types/products"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUsersForProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q5:requestInfo" xmlns:q5="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="1" maxOccurs="1" name="filter" nillable="true" type="q6:resourceGroupSelector" xmlns:q6="http://services.wolterskluwer.com/types/products"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="product" type="q7:productId" xmlns:q7="http://services.wolterskluwer.com/types/products"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUsersForProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q8:responseInfo" xmlns:q8="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="users" type="q9:user" xmlns:q9="http://services.wolterskluwer.com/types/common"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSubscribedProducts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q10:requestInfo" xmlns:q10="http://services.wolterskluwer.com/docs/common"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSubscribedProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q11:responseInfo" xmlns:q11="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="products" type="q12:product" xmlns:q12="http://services.wolterskluwer.com/types/products"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSubscribedProductsForUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q13:requestInfo" xmlns:q13="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="userId" type="q14:userKey" xmlns:q14="http://services.wolterskluwer.com/types/common"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSubscribedProductsForUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q15:responseInfo" xmlns:q15="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="userProducts" type="q16:userProducts" xmlns:q16="http://services.wolterskluwer.com/types/products"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="searchUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q17:requestInfo" xmlns:q17="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="userFilter" type="q18:userFilter" xmlns:q18="http://services.wolterskluwer.com/types/rights"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="searchUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q19:responseInfo" xmlns:q19="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="user" type="q20:user" xmlns:q20="http://services.wolterskluwer.com/types/common"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="assignPermissionToUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q21:requestInfo" xmlns:q21="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="permissionInfo" type="q22:permissionInfo" xmlns:q22="http://services.wolterskluwer.com/types/rights"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="user" type="q23:user" xmlns:q23="http://services.wolterskluwer.com/types/common"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="assignPermissionToUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q24:responseInfo" xmlns:q24="http://services.wolterskluwer.com/docs/common"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllPermissionsForUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q25:requestInfo" xmlns:q25="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="user" type="q26:user" xmlns:q26="http://services.wolterskluwer.com/types/common"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAllPermissionsForUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q27:responseInfo" xmlns:q27="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="permissionInfo" type="q28:permissionInfo" xmlns:q28="http://services.wolterskluwer.com/types/rights"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUsersWithPermission">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q29:requestInfo" xmlns:q29="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="permissionInfo" type="q30:permissionInfo" xmlns:q30="http://services.wolterskluwer.com/types/rights"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUsersWithPermissionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q31:responseInfo" xmlns:q31="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="user" type="q32:user" xmlns:q32="http://services.wolterskluwer.com/types/common"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="revokePermission">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q33:requestInfo" xmlns:q33="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="permissionInfo" type="q34:permissionInfo" xmlns:q34="http://services.wolterskluwer.com/types/rights"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="user" type="q35:user" xmlns:q35="http://services.wolterskluwer.com/types/common"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="revokePermissionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q36:responseInfo" xmlns:q36="http://services.wolterskluwer.com/docs/common"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRights">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q37:requestInfo" xmlns:q37="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="userGroupId" type="q38:userGroupId" xmlns:q38="http://services.wolterskluwer.com/types/rights"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRightsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q39:responseInfo" xmlns:q39="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="groupRights" type="tns:userGroupRightsList"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="userGroupRightsList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="userGroupId" type="q40:userGroupId" xmlns:q40="http://services.wolterskluwer.com/types/rights"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="right" type="q41:right" xmlns:q41="http://services.wolterskluwer.com/types/rights"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="getRightsForUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q42:requestInfo" xmlns:q42="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="userId" type="q43:commonId" xmlns:q43="http://services.wolterskluwer.com/types/common"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRightsForUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element minOccurs="0" maxOccurs="1" ref="q44:responseInfo" xmlns:q44="http://services.wolterskluwer.com/docs/common"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="right" type="q45:right" xmlns:q45="http://services.wolterskluwer.com/types/rights"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/docs/common" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/docs/common">
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd2" namespace="http://services.wolterskluwer.com/types/message"/>
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd3" namespace="http://services.wolterskluwer.com/types/common"/>
+  <xs:element name="requestInfo" type="q1:requestInfo" xmlns:q1="http://services.wolterskluwer.com/types/message"/>
+  <xs:element name="responseInfo" type="q2:responseInfo" xmlns:q2="http://services.wolterskluwer.com/types/message"/>
+  <xs:element name="commonClientFault" type="tns:commonClientFault"/>
+  <xs:complexType name="commonClientFault" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractClientFault"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="abstractClientFault" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractFault"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="abstractFault" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractReturn">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="message" type="xs:string"/>
+          <xs:element minOccurs="0" maxOccurs="1" name="instanceId" type="xs:string"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="correlationId" nillable="true" type="q3:correlationId" xmlns:q3="http://services.wolterskluwer.com/types/message"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="stackTrace" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="customData" type="q4:extensionItem" xmlns:q4="http://services.wolterskluwer.com/types/common"/>
+          <xs:element minOccurs="0" maxOccurs="1" name="exception" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="abstractReturn" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractMessage"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="abstractMessage" abstract="true"/>
+  <xs:complexType name="abstractRequest" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="requestInfo" type="q5:requestInfo" xmlns:q5="http://services.wolterskluwer.com/types/message"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="abstractResponse" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractReturn">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="responseInfo" type="q6:responseInfo" xmlns:q6="http://services.wolterskluwer.com/types/message"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="unexpectedServerFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractFault">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="notAuthorizedFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractClientFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="unAuthorizedResourceId" type="q7:commonId" xmlns:q7="http://services.wolterskluwer.com/types/common"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="missingProductFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="availableProducts" type="q8:productInfo" xmlns:q8="http://services.wolterskluwer.com/types/common"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="invalidProductFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="availableProducts" type="q9:productInfo" xmlns:q9="http://services.wolterskluwer.com/types/common"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="invalidTypeFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="invalidType" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="duplicateIdFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="id" type="q10:commonId" xmlns:q10="http://services.wolterskluwer.com/types/common"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="invalidFilterSyntaxFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="requestedFilter" type="xs:string"/>
+          <xs:element minOccurs="0" maxOccurs="1" name="correctFilterSyntax" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="invalidIdSyntaxFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="id" type="q11:commonId" xmlns:q11="http://services.wolterskluwer.com/types/common"/>
+          <xs:element minOccurs="0" maxOccurs="1" name="corrextSyntax" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="idNotFoundFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="id" type="q12:commonId" xmlns:q12="http://services.wolterskluwer.com/types/common"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="invalidIdFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ids" type="q13:commonId" xmlns:q13="http://services.wolterskluwer.com/types/common"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="validationFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="error" type="q14:validationError" xmlns:q14="http://services.wolterskluwer.com/types/message"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="implementationValidationFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:validationFault"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="sessionExpiredFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="notImplementedFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="unauthenticatedFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="concurrentUsageExceededFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="invalidUserFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="invalidSessionFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="accessDeniedFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="uncategorizedCommonClientFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:commonClientFault">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="unexpectedServerFault" type="tns:unexpectedServerFault"/>
+  <xs:element name="invalidIdFault" type="tns:invalidIdFault"/>
+  <xs:element name="idNotFoundFault" type="tns:idNotFoundFault"/>
+  <xs:element name="invalidUserFault" type="tns:invalidUserFault"/>
+  <xs:element name="invalidFilterSyntaxFault" type="tns:invalidFilterSyntaxFault"/>
+  <xs:element name="invalidTypeFault" type="tns:invalidTypeFault"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/types/message" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/types/message">
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd3" namespace="http://services.wolterskluwer.com/types/common"/>
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd11" namespace="http://services.wolterskluwer.com/types/capabilities"/>
+  <xs:complexType name="requestInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="clientInfo" type="tns:osaClientInfo"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="securityToken" nillable="true" type="q1:securityToken" xmlns:q1="http://services.wolterskluwer.com/types/common"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="correlationId" nillable="true" type="tns:correlationId"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="extensionItems" type="q2:extensionItem" xmlns:q2="http://services.wolterskluwer.com/types/common"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="productId" nillable="true" type="q3:productId" xmlns:q3="http://services.wolterskluwer.com/types/common"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="noCache" nillable="true" type="xs:boolean"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="osaClientInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:clientInfo">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="osaSuiteVersion" nillable="true" type="xs:string"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="clientInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="clientId" type="tns:clientId"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="version" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="instanceId" type="tns:instanceId"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="instanceTag" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="locale" nillable="true" type="xs:language"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="timezone" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="machineName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="operatingSystemName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="operatingSystemVersion" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="deviceModel" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="deviceModelVersion" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="runtimeName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="runtimeVersion" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="origin" nillable="true" type="tns:clientInfo"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="originIp" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="extensionItems" type="q4:extensionItem" xmlns:q4="http://services.wolterskluwer.com/types/common"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clientId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q5:abstractId" xmlns:q5="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="cacheContainerId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q6:abstractId" xmlns:q6="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="instanceId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q7:abstractId" xmlns:q7="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="correlationId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q8:abstractId" xmlns:q8="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="errorId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q9:abstractId" xmlns:q9="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="responseInfo">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="instanceId" nillable="true" type="tns:instanceId"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="extensionItems" type="q10:extensionItem" xmlns:q10="http://services.wolterskluwer.com/types/common"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="cache" nillable="true" type="tns:responseInfoCache"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="correlationId" nillable="true" type="tns:correlationId"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="productId" nillable="true" type="q11:productId" xmlns:q11="http://services.wolterskluwer.com/types/common"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="noCache" nillable="true" type="xs:boolean"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="responseInfoCache">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="versions" nillable="true" type="tns:cacheContainerVersionList"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cacheContainerVersionList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:cacheContainerVersion"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cacheContainerVersion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="cacheContainerId" type="tns:cacheContainerId"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="version" type="xs:string"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validationError">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="message" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="path" type="q12:restrictionPath" xmlns:q12="http://services.wolterskluwer.com/types/capabilities"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd3</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/types/common" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/types/common">
+  <xs:complexType name="abstractId" abstract="true">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="id" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="extensionItems" type="tns:extensionItem"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="extensionItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:keyValuePair"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="keyValuePair">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="key" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="value" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractId"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="subjectId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractId"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="channelId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractId"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="commonId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractId"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="loginId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractId"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="userKey">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractId"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="securityDomainId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractId"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="domain">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:abstractId"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="securityToken">
+    <xs:sequence>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="productId" type="tns:productId"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="user">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="loginId" nillable="true" type="tns:loginId"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="userKey" type="tns:userKey"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="domain" nillable="true" type="tns:domain"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="userCategory" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="name" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="account" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="email" nillable="true" type="xs:string"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="amount">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="quantity" type="xs:double"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="unit" type="tns:units"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="units">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Usd"/>
+      <xs:enumeration value="Eur"/>
+      <xs:enumeration value="Tokens"/>
+      <xs:enumeration value="Units"/>
+      <xs:enumeration value="Minutes"/>
+      <xs:enumeration value="Seconds"/>
+      <xs:enumeration value="GB"/>
+      <xs:enumeration value="MB"/>
+      <xs:enumeration value="KB"/>
+      <xs:enumeration value="Downloads"/>
+      <xs:enumeration value="Transactions"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="dateTimeRestriction">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="date1" type="xs:dateTime"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="date2" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="dateOperator" type="tns:dateOperator"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="dateOperator">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Before"/>
+      <xs:enumeration value="After"/>
+      <xs:enumeration value="Between"/>
+      <xs:enumeration value="On"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="versionRestriction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="version" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="version2" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="versionOperator" type="tns:versionOperator"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="versionOperator">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Maximum"/>
+      <xs:enumeration value="Minimum"/>
+      <xs:enumeration value="Between"/>
+      <xs:enumeration value="Exact"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd11</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/types/capabilities" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/types/capabilities">
+  <xs:complexType name="restrictionPath">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:restrictionPathItem"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="restrictionPathItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="namespace" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="typeName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="typeNamespace" nillable="true" type="xs:string"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd4</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/types/products" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/types/products">
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd3" namespace="http://services.wolterskluwer.com/types/common"/>
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd12" namespace="http://services.wolterskluwer.com/types/rights"/>
+  <xs:complexType name="resourceId" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q1:abstractId" xmlns:q1="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="subscriptionId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:resourceId"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="licenseId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:resourceId"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="productId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:resourceId"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="resourceAuthorization">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="resource" type="tns:resourceId"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="isAuthorized" type="xs:boolean"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resourceGroupSelector">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="resourceGroupId" type="q2:resourceGroupId" xmlns:q2="http://services.wolterskluwer.com/types/rights"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="childResource" nillable="true" type="tns:resourceId"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="childResourceGroup" nillable="true" type="tns:resourceGroupSelector"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="product">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="productId" type="tns:productId"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="displayname" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="resourceGroup" type="q3:resourceGroup" xmlns:q3="http://services.wolterskluwer.com/types/rights"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="service" type="q4:service" xmlns:q4="http://services.wolterskluwer.com/types/rights"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="sku" type="tns:stockKeepingUnit"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="stockKeepingUnit">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="SKUId" type="q5:commonId" xmlns:q5="http://services.wolterskluwer.com/types/common"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="productId" nillable="true" type="tns:productId"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="applicationProductId" nillable="true" type="tns:resourceGroupSelector"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="userProducts">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="user" type="q6:userKey" xmlns:q6="http://services.wolterskluwer.com/types/common"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="product" type="tns:product"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd12</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/types/rights" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/types/rights">
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd3" namespace="http://services.wolterskluwer.com/types/common"/>
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd4" namespace="http://services.wolterskluwer.com/types/products"/>
+  <xs:complexType name="resourceGroupId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q1:abstractId" xmlns:q1="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="resourceGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="resourceGroupId" type="tns:resourceGroupId"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="name" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="childResourceGroups" type="tns:resourceGroup"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="resource" type="q2:resourceId" xmlns:q2="http://services.wolterskluwer.com/types/products"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="service">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="identifier" type="tns:serviceId"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="displayname" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="amountlimit" type="q3:amount" xmlns:q3="http://services.wolterskluwer.com/types/common"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="dateLimit" type="q4:dateTimeRestriction" xmlns:q4="http://services.wolterskluwer.com/types/common"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="versionLimit" type="q5:versionRestriction" xmlns:q5="http://services.wolterskluwer.com/types/common"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="serviceId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q6:abstractId" xmlns:q6="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="userFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="filter" type="xs:string"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="permissionInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="permissionableEntityType" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="permissionableEntityId" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="permissionTypeInfo" type="tns:permissionTypeInfo"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="permissionTypeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="permissionType" type="tns:permissionType"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="permissionType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="id" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="userGroupId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q7:abstractId" xmlns:q7="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="right">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="rightId" type="tns:rightId"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="userGroup" type="tns:userGroupId"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="resouceGroup" type="tns:resourceGroupId"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="service" type="tns:service"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rightId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q8:abstractId" xmlns:q8="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd7</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/osa/transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/osa/transform">
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd8"/>
+  <xs:element name="domainVersionMismatch" type="tns:domainVersionMismatch"/>
+  <xs:complexType name="domainVersionMismatch">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" ref="clientVersion"/>
+      <xs:element minOccurs="0" maxOccurs="1" ref="serverVersion"/>
+      <xs:element minOccurs="0" maxOccurs="1" ref="transformVersion"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd8</con:url><con:content>&lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  &lt;xs:element name="clientVersion" type="xs:string"/>
+  &lt;xs:element name="serverVersion" type="xs:string"/>
+  &lt;xs:element name="transformVersion" type="xs:string"/>
+&lt;/xs:schema></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd5</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/types/diagnostics" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/types/diagnostics">
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd3" namespace="http://services.wolterskluwer.com/types/common"/>
+  <xs:complexType name="logId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q1:abstractId" xmlns:q1="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="correlationId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q2:abstractId" xmlns:q2="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="checkId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q3:abstractId" xmlns:q3="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="logFilter">
+    <xs:sequence>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element minOccurs="0" maxOccurs="1" name="dataFilter" type="tns:dataFilter"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="serviceFilter" type="tns:serviceFilter"/>
+        <xs:element minOccurs="0" maxOccurs="1" name="operationFilter" type="tns:operationFilter"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dataFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="xpathExpression" type="xs:string"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="serviceFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="namePattern" type="xs:string"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="operationFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="namePattern" type="xs:string"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="errorReportFaultInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="message" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="instanceId" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="stackTrace" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="customData" type="q4:extensionItem" xmlns:q4="http://services.wolterskluwer.com/types/common"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="exception" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="osaLevel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SEVERE"/>
+      <xs:enumeration value="WARNING"/>
+      <xs:enumeration value="CONFIG"/>
+      <xs:enumeration value="FINE"/>
+      <xs:enumeration value="FINER"/>
+      <xs:enumeration value="FINEST"/>
+      <xs:enumeration value="ALL"/>
+      <xs:enumeration value="INFO"/>
+      <xs:enumeration value="TRACE"/>
+      <xs:enumeration value="DEBUG"/>
+      <xs:enumeration value="WARN"/>
+      <xs:enumeration value="ERROR"/>
+      <xs:enumeration value="FATAL"/>
+      <xs:enumeration value="OFF"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="osaLogger">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="level" type="tns:osaLevel"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="appender" type="tns:osaAppender"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="osaAppender">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="level" type="tns:osaLevel"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="checkParameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="value" type="xs:string"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="logFolder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="logFile" type="tns:logFile"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="logFolder" type="tns:logFolder"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="logFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="logId" type="tns:logId"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="size" type="xs:long"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="created" type="xs:dateTime"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="modified" type="xs:dateTime"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="correlationId" type="tns:correlationId"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="checkResultType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success"/>
+      <xs:enumeration value="Critical"/>
+      <xs:enumeration value="Error"/>
+      <xs:enumeration value="Warning"/>
+      <xs:enumeration value="Information"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="checkDeclaration">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="checkId" type="tns:checkId"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="parameter" type="tns:checkParameterDeclaration"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="checkParameterDeclaration">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string"/>
+      <xs:element minOccurs="1" maxOccurs="1" name="required" type="xs:boolean"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="configurationProperty">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="property" type="q5:extensionItem" xmlns:q5="http://services.wolterskluwer.com/types/common"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="location" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd6</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/types/batch" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/types/batch">
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd3" namespace="http://services.wolterskluwer.com/types/common"/>
+  <xs:complexType name="correlationId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q1:abstractId" xmlns:q1="http://services.wolterskluwer.com/types/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd9</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/docs/diagnostics" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/docs/diagnostics">
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd1" namespace="http://services.wolterskluwer.com/docs/common"/>
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd5" namespace="http://services.wolterskluwer.com/types/diagnostics"/>
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd3" namespace="http://services.wolterskluwer.com/types/common"/>
+  <xs:complexType name="removeFilter">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q1:abstractRequest" xmlns:q1="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="filters" type="q2:logFilter" xmlns:q2="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="addFilter">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q3:abstractRequest" xmlns:q3="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="filters" type="q4:logFilter" xmlns:q4="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getLogSettings">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q5:abstractRequest" xmlns:q5="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="setLogSettings">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q6:abstractRequest" xmlns:q6="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="logFileName" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="enableLogging" nillable="true" type="xs:boolean"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="appendLog" nillable="true" type="xs:boolean"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getConfigurationProperties">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q7:abstractRequest" xmlns:q7="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getAvailableLogs">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q8:abstractRequest" xmlns:q8="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getOSAVersion">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q9:abstractRequest" xmlns:q9="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getImplementationVersion">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q10:abstractRequest" xmlns:q10="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="retrieveLog">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q11:abstractRequest" xmlns:q11="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="logId" type="q12:logId" xmlns:q12="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getDomainContractVersion">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q13:abstractRequest" xmlns:q13="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getSecurityDomainId">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q14:abstractRequest" xmlns:q14="http://services.wolterskluwer.com/docs/common"/>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="sendErrorReport">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q15:abstractRequest" xmlns:q15="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="error" type="q16:errorReportFaultInfo" xmlns:q16="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="additionalInfo" nillable="true" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getErrorReport">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q17:abstractRequest" xmlns:q17="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="error" type="q18:errorReportFaultInfo" xmlns:q18="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="additionalInfo" nillable="true" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getLoggers">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q19:abstractRequest" xmlns:q19="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getLogger">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q20:abstractRequest" xmlns:q20="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="updateLoggerLevel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q21:abstractRequest" xmlns:q21="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="loggerName" type="xs:string"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="level" type="q22:osaLevel" xmlns:q22="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="addLogger">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q23:abstractRequest" xmlns:q23="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="osaLogger" type="q24:osaLogger" xmlns:q24="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="updateAppenderLevel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q25:abstractRequest" xmlns:q25="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="appenderName" type="xs:string"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="level" type="q26:osaLevel" xmlns:q26="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getAppenders">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q27:abstractRequest" xmlns:q27="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getAvailableChecks">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q28:abstractRequest" xmlns:q28="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="performManagementInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q29:abstractRequest" xmlns:q29="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="checkId" type="q30:checkId" xmlns:q30="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="checkParameter" type="q31:checkParameter" xmlns:q31="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getAvailableManagementInfoChecks">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q32:abstractRequest" xmlns:q32="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="performCheck">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q33:abstractRequest" xmlns:q33="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="checkId" type="q34:checkId" xmlns:q34="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="checkParameter" type="q35:checkParameter" xmlns:q35="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getLoggersResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q36:abstractResponse" xmlns:q36="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="logger" type="q37:osaLogger" xmlns:q37="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getSecurityDomainIdResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q38:abstractResponse" xmlns:q38="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="securityDomainId" type="q39:securityDomainId" xmlns:q39="http://services.wolterskluwer.com/types/common"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="sendErrorReportResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q40:abstractResponse" xmlns:q40="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getErrorReportResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q41:abstractResponse" xmlns:q41="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="report" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getLoggerResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q42:abstractResponse" xmlns:q42="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="logger" type="q43:osaLogger" xmlns:q43="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="updateLoggerLevelResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q44:abstractResponse" xmlns:q44="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="updateAppenderLevelResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q45:abstractResponse" xmlns:q45="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getAppendersResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q46:abstractResponse" xmlns:q46="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="appender" type="q47:osaAppender" xmlns:q47="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getAvailableLogsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q48:abstractResponse" xmlns:q48="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="logFolder" type="q49:logFolder" xmlns:q49="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="performManagementInfoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q50:abstractResponse" xmlns:q50="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="checkId" type="q51:checkId" xmlns:q51="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="result" type="q52:checkResultType" xmlns:q52="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:element minOccurs="0" maxOccurs="1" name="details" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getAvailableManagementInfoChecksResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q53:abstractResponse" xmlns:q53="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="check" type="q54:checkDeclaration" xmlns:q54="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="retrieveLogResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q55:abstractResponse" xmlns:q55="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="logFile" type="xs:base64Binary"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="removeFilterResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q56:abstractResponse" xmlns:q56="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="addFilterResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q57:abstractResponse" xmlns:q57="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getLogSettingsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q58:abstractResponse" xmlns:q58="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="logFileName" type="xs:string"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="enableLogging" type="xs:boolean"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="appendLog" type="xs:boolean"/>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="filters" type="q59:logFilter" xmlns:q59="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="setLogSettingsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q60:abstractResponse" xmlns:q60="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getConfigurationPropertiesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q61:abstractResponse" xmlns:q61="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="configurationProperty" type="q62:configurationProperty" xmlns:q62="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getDomainContractVersionResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q63:abstractResponse" xmlns:q63="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="contractVersion" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getOSAVersionResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q64:abstractResponse" xmlns:q64="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="osaVersion" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getImplementationVersionResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q65:abstractResponse" xmlns:q65="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="implementationVersion" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="getAvailableChecksResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q66:abstractResponse" xmlns:q66="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="check" type="q67:checkDeclaration" xmlns:q67="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="performCheckResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q68:abstractResponse" xmlns:q68="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="checkId" type="q69:checkId" xmlns:q69="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:element minOccurs="1" maxOccurs="1" name="result" type="q70:checkResultType" xmlns:q70="http://services.wolterskluwer.com/types/diagnostics"/>
+          <xs:element minOccurs="0" maxOccurs="1" name="details" type="xs:string"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="addLoggerResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q71:abstractResponse" xmlns:q71="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd10</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://services.wolterskluwer.com/docs/batch" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.wolterskluwer.com/docs/batch">
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd1" namespace="http://services.wolterskluwer.com/docs/common"/>
+  <xs:import schemaLocation="http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc?xsd=xsd6" namespace="http://services.wolterskluwer.com/types/batch"/>
+  <xs:complexType name="processBatch">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q1:abstractRequest" xmlns:q1="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="requestList" type="tns:requestList"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="requestList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:requestItem"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="requestItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="correlationId" type="q2:correlationId" xmlns:q2="http://services.wolterskluwer.com/types/batch"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="request" type="q3:abstractRequest" xmlns:q3="http://services.wolterskluwer.com/docs/common"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="processBatchResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="q4:abstractResponse" xmlns:q4="http://services.wolterskluwer.com/docs/common">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="responseList" type="tns:responseList"/>
+          <xs:any minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="responseList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:responseItem"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="responseItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="correlationId" type="q5:correlationId" xmlns:q5="http://services.wolterskluwer.com/types/batch"/>
+      <xs:element minOccurs="0" maxOccurs="1" name="response" type="q6:abstractReturn" xmlns:q6="http://services.wolterskluwer.com/docs/common"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint></con:endpoints><con:operation id="7d413b95-3b37-476c-87b0-f6e43d5bf3d3" isOneWay="false" action="http://services.wolterskluwer.com/urm/Authorization/assignPermissionToUsers" name="assignPermissionToUsers" bindingOperationName="assignPermissionToUsers" type="Request-Response" outputName="AssignPermissionToUsersResponse" inputName="AssignPermissionToUsers" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="32c36ec9-db56-484a-a071-e4174db7dcb9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urm:assignPermissionToUsers/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/assignPermissionToUsers"/></con:call></con:operation><con:operation id="cfdd41fe-33a6-4e11-9277-5abf6b3265c7" isOneWay="false" action="http://services.wolterskluwer.com/urm/Authorization/getAllPermissionsForUser" name="getAllPermissionsForUser" bindingOperationName="getAllPermissionsForUser" type="Request-Response" outputName="GetAllPermissionsForUserResponse" inputName="GetAllPermissionsForUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f5cd1d40-4392-4267-adf6-e4637f499ca8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urm:getAllPermissionsForUser/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/getAllPermissionsForUser"/></con:call></con:operation><con:operation id="9ee464b7-348a-40a0-83a0-c22fac91a272" isOneWay="false" action="http://services.wolterskluwer.com/urm/Authorization/getRights" name="getRights" bindingOperationName="getRights" type="Request-Response" outputName="GetRightsResponse" inputName="GetRights" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="07d7e715-fbc6-4e99-9bea-e4bed6c2ec84" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urm:getRights/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/getRights"/></con:call></con:operation><con:operation id="eabad789-2aea-49ed-ac83-58791f5531ba" isOneWay="false" action="http://services.wolterskluwer.com/urm/Authorization/getRightsForUser" name="getRightsForUser" bindingOperationName="getRightsForUser" type="Request-Response" outputName="GetRightsForUserResponse" inputName="GetRightsForUser" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c1ea9562-8851-4b9b-bb8e-f4ed78d5cd14" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urm:getRightsForUser/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/getRightsForUser"/></con:call></con:operation><con:operation id="88e0e453-730a-4bba-ba04-291c4b692a74" isOneWay="false" action="http://services.wolterskluwer.com/urm/Authorization/getSubscribedProducts" name="getSubscribedProducts" bindingOperationName="getSubscribedProducts" type="Request-Response" outputName="GetSubscribedProductsResponse" inputName="GetSubscribedProducts" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b516f907-202c-4f6a-9016-804e1082dc4b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urm:getSubscribedProducts/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/getSubscribedProducts"/></con:call></con:operation><con:operation id="4177082d-073d-40fa-86cc-c4c1a9e6c629" isOneWay="false" action="http://services.wolterskluwer.com/urm/Authorization/getSubscribedProductsForUsers" name="getSubscribedProductsForUsers" bindingOperationName="getSubscribedProductsForUsers" type="Request-Response" outputName="GetSubscribedProductsForUsersResponse" inputName="GetSubscribedProductsForUsers" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3615b326-b9e1-4ca9-a568-ed1891cd67d4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urm:getSubscribedProductsForUsers/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/getSubscribedProductsForUsers"/></con:call></con:operation><con:operation id="d59504cf-9a95-4a83-be17-94f7841ac24d" isOneWay="false" action="http://services.wolterskluwer.com/urm/Authorization/getUsersForProduct" name="getUsersForProduct" bindingOperationName="getUsersForProduct" type="Request-Response" outputName="GetUsersForProductResponse" inputName="GetUsersForProduct" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6b3715ed-2cf0-4255-91f0-6f2ed81f3f73" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm" xmlns:prod="http://services.wolterskluwer.com/types/products">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urm:getUsersForProduct>\r
+         <urm:filter>\r
+            <prod:childResource/>\r
+            <prod:childResourceGroup/>\r
+         </urm:filter>\r
+      </urm:getUsersForProduct>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/getUsersForProduct"/></con:call></con:operation><con:operation id="a406b2c1-107a-4651-9aed-d58c9ea49943" isOneWay="false" action="http://services.wolterskluwer.com/urm/Authorization/getUsersWithPermission" name="getUsersWithPermission" bindingOperationName="getUsersWithPermission" type="Request-Response" outputName="GetUsersWithPermissionResponse" inputName="GetUsersWithPermission" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b8aefa96-e990-4409-845d-9f41ad6d66a3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urm:getUsersWithPermission/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/getUsersWithPermission"/></con:call></con:operation><con:operation id="79d1c55a-c4e9-48be-80d8-1c2c7dbdb37a" isOneWay="false" action="http://services.wolterskluwer.com/urm/Authorization/isAuthorized" name="isAuthorized" bindingOperationName="isAuthorized" type="Request-Response" outputName="IsAuthorizedResponse" inputName="IsAuthorized" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="715a29e7-1ddb-4da4-9982-f3bd0a08f1f9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urm:isAuthorized/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/isAuthorized"/></con:call></con:operation><con:operation id="abf13a27-7c43-4cb8-a4fc-49bb4f4e1795" isOneWay="false" action="http://services.wolterskluwer.com/urm/Authorization/revokePermission" name="revokePermission" bindingOperationName="revokePermission" type="Request-Response" outputName="RevokePermissionResponse" inputName="RevokePermission" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="11712e58-9211-4265-9a88-c33f6ffa1939" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urm:revokePermission/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/revokePermission"/></con:call></con:operation><con:operation id="29b0274b-8896-46a5-ad80-2186056cc749" isOneWay="false" action="http://services.wolterskluwer.com/urm/Authorization/searchUsers" name="searchUsers" bindingOperationName="searchUsers" type="Request-Response" outputName="SearchUsersResponse" inputName="SearchUsers" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ccfbdec1-f248-4079-9cc6-4ced4ad175c7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <urm:searchUsers/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/searchUsers"/></con:call></con:operation></con:interface><con:testSuite id="814e86fd-17da-4ef7-90f7-50ef8c2135ca" name="Tests"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c928400a-ded3-4501-8131-1f9a0541042f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Basics" searchProperties="true"><con:settings/><con:testStep type="request" id="24480bfe-b515-47df-af1c-492c6b2e047b" name="getImplementationVersion - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IDiagnostics</con:interface><con:operation>getImplementationVersion</con:operation><con:request name="getImplementationVersion - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="54f6334f-c9e0-420a-90c5-d8b56b8fc6a6"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_identity_wcf/Diagnostics.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
    <soap:Header>
       <osaVersionHeader originalVersion="04.09.08.114" serverVersion="04.09.08.114" xmlns="http://services.wolterskluwer.com/osa/transform"/>
    </soap:Header>
@@ -34914,7 +37088,7 @@
             <noCache xsi:nil="true" xmlns="http://services.wolterskluwer.com/types/message" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
          </requestInfo>
          <credentials>
-            <loginId xmlns="http://services.wolterskluwer.com/types/common">testanv1@nitk.nj</loginId>
+            <loginId xmlns="http://services.wolterskluwer.com/types/common">educ1@nitk.nj</loginId>
             <password xmlns="http://services.wolterskluwer.com/types/common">juridik</password>
             <ipAddress xmlns="http://services.wolterskluwer.com/types/common">127.0.0.1</ipAddress>
             <refererUrl xsi:nil="true" xmlns="http://services.wolterskluwer.com/types/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
@@ -34979,20 +37153,20 @@
 					<Assertion Version="2.0" IssueInstant="2015-05-12T13:14:41.3948789+02:00" xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                <Issuer>urn:com.wolterskluwer:default</Issuer>
                <Subject>
-                  <NameID>c643c901-758b-45fc-b484-9015bed7d923</NameID>
+                  <NameID>75d32d9d-3acf-43cd-9bec-c049609be895</NameID>
                   <SubjectConfirmation>
-                     <SubjectConfirmationData NotOnOrAfter="2015-05-15T12:14:29.3106061+02:00"/>
+                     <SubjectConfirmationData NotOnOrAfter="2015-05-18T16:37:21.4888539+02:00"/>
                   </SubjectConfirmation>
                </Subject>
                <Conditions>
                   <OneTimeUse/>
                </Conditions>
-               <AuthnStatement AuthnInstant="2015-05-15T11:44:29.3106061+02:00" SessionIndex="c643c901-758b-45fc-b484-9015bed7d923" SessionNotOnOrAfter="2015-05-15T12:14:29.3106061+02:00">
+               <AuthnStatement AuthnInstant="2015-05-18T16:07:21.4888539+02:00" SessionIndex="75d32d9d-3acf-43cd-9bec-c049609be895" SessionNotOnOrAfter="2015-05-18T16:37:21.4888539+02:00">
                   <AuthnContext/>
                </AuthnStatement>
                <AttributeStatement>
                   <Attribute Name="urn:com.wolterskluwer:default:loginId">
-                     <AttributeValue xsi:type="xsd:string">testanv1@nitk.nj</AttributeValue>
+                     <AttributeValue xsi:type="xsd:string">educ1@nitk.nj</AttributeValue>
                   </Attribute>
                   <Attribute Name="urn:com.wolterskluwer:default:name">
                      <AttributeValue xsi:nil="true"/>
@@ -35019,7 +37193,165 @@
 			</requestInfo>
 		</getUserProfile>
 	</s:Body>
-</s:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c8788164-0503-4fc5-90c6-6b4186c0fd58" name="SOAP Response"/><con:assertion type="Invalid HTTP Status Codes" id="307ace2f-b8f8-4279-857e-be39467fa2b7" name="Invalid HTTP Status Codes"><con:configuration><codes>500</codes></con:configuration></con:assertion><con:credentials><con:username/><con:password/><con:domain/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/identity/Profile/getUserProfile"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="Prep getPreferences" id="f9ec86ee-792a-48fd-a1c7-c4a8a1f0bb68"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="false" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="true"><con:name>authentication token</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>getActiveSession - Request 1</con:sourceStep><con:sourcePath>declare namespace saml2='urn:oasis:names:tc:SAML:2.0:assertion';
+</s:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c8788164-0503-4fc5-90c6-6b4186c0fd58" name="SOAP Response"/><con:assertion type="Invalid HTTP Status Codes" id="307ace2f-b8f8-4279-857e-be39467fa2b7" name="Invalid HTTP Status Codes"><con:configuration><codes>500</codes></con:configuration></con:assertion><con:credentials><con:username/><con:password/><con:domain/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/identity/Profile/getUserProfile"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="Prep getRightsForUser" id="87895d48-4d87-46be-b2ab-7e438e50b9d6"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="false" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="true"><con:name>authentication token</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>getActiveSession - Request 1</con:sourceStep><con:sourcePath>declare namespace saml2='urn:oasis:names:tc:SAML:2.0:assertion';
+//saml2:Assertion</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>getUserProfile - Request 1</con:targetStep><con:targetPath>declare namespace saml2='urn:oasis:names:tc:SAML:2.0:assertion';
+//saml2:Assertion</con:targetPath><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="false" transferTextContent="true" failOnError="true" transferChildNodes="false" ignoreEmpty="false" transferToAll="false" entitize="false"><con:name>user name</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>getActiveSession - Request 1</con:sourceStep><con:sourcePath>declare namespace saml2='urn:oasis:names:tc:SAML:2.0:assertion';
+//saml2:Attribute[@Name='urn:com.wolterskluwer:default:loginId']/saml2:AttributeValue</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>getRightsForUser - Request 1</con:targetStep><con:targetPath>declare namespace urm='http://services.wolterskluwer.com/docs/urm';
+declare namespace com='http://services.wolterskluwer.com/types/common';
+//urm:userId/com:id</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="04cb7316-75e2-49ea-9d5b-3d02ba00aaad" name="getRightsForUser - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_IAuthorization</con:interface><con:operation>getRightsForUser</con:operation><con:request name="getRightsForUser - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="78a15b14-e549-4cac-966f-122160c206f9"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15/spore_Dev/osa115/mithrandir_urm_wcf/Authorization.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urm="http://services.wolterskluwer.com/docs/urm" xmlns:com="http://services.wolterskluwer.com/docs/common" xmlns:mes="http://services.wolterskluwer.com/types/message" xmlns:com1="http://services.wolterskluwer.com/types/common">
+    <soapenv:Header>
+      <osaVersionHeader originalVersion="01.15.09.144" serverVersion="01.15.09.144" xmlns="http://services.wolterskluwer.com/osa/transform"/>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urm:getRightsForUser>
+         <!--You may enter ANY elements at this point-->
+         <!--Optional:-->
+         <com:requestInfo>
+            <!--Optional:-->
+            <mes:clientInfo>
+               <!--Optional:-->
+               <mes:clientId>
+                  <!--Optional:-->
+                  <com1:id>0</com1:id>
+                  <!--Zero or more repetitions:-->
+                  <com1:extensionItems>
+                     <!--Optional:-->
+                     <com1:key>0</com1:key>
+                     <!--Optional:-->
+                     <com1:value>0</com1:value>
+                  </com1:extensionItems>
+               </mes:clientId>
+               <mes:version>0</mes:version>
+               <!--Optional:-->
+               <mes:instanceId>
+                  <!--Optional:-->
+                  <com1:id>0</com1:id>
+                  <!--Zero or more repetitions:-->
+                  <com1:extensionItems>
+                     <!--Optional:-->
+                     <com1:key>0</com1:key>
+                     <!--Optional:-->
+                     <com1:value>0</com1:value>
+                  </com1:extensionItems>
+               </mes:instanceId>
+               <mes:instanceTag>0</mes:instanceTag>
+               <mes:locale>0</mes:locale>
+               <mes:timezone>0</mes:timezone>
+               <mes:machineName>0</mes:machineName>
+               <mes:operatingSystemName>0</mes:operatingSystemName>
+               <mes:operatingSystemVersion>0</mes:operatingSystemVersion>
+               <mes:deviceModel>0</mes:deviceModel>
+               <mes:deviceModelVersion>0</mes:deviceModelVersion>
+               <mes:runtimeName>0</mes:runtimeName>
+               <mes:runtimeVersion>0</mes:runtimeVersion>
+               <mes:origin>
+                  <!--Optional:-->
+                  <mes:clientId>
+                     <!--Optional:-->
+                     <com1:id>0</com1:id>
+                     <!--Zero or more repetitions:-->
+                     <com1:extensionItems>
+                        <!--Optional:-->
+                        <com1:key>0</com1:key>
+                        <!--Optional:-->
+                        <com1:value>0</com1:value>
+                     </com1:extensionItems>
+                  </mes:clientId>
+                  <mes:version>0</mes:version>
+                  <!--Optional:-->
+                  <mes:instanceId>
+                     <!--Optional:-->
+                     <com1:id>0</com1:id>
+                     <!--Zero or more repetitions:-->
+                     <com1:extensionItems>
+                        <!--Optional:-->
+                        <com1:key>0</com1:key>
+                        <!--Optional:-->
+                        <com1:value>0</com1:value>
+                     </com1:extensionItems>
+                  </mes:instanceId>
+                  <mes:instanceTag>0</mes:instanceTag>
+                  <mes:locale>0</mes:locale>
+                  <mes:timezone>0</mes:timezone>
+                  <mes:machineName>0</mes:machineName>
+                  <mes:operatingSystemName>0</mes:operatingSystemName>
+                  <mes:operatingSystemVersion>0</mes:operatingSystemVersion>
+                  <mes:deviceModel>0</mes:deviceModel>
+                  <mes:deviceModelVersion>0</mes:deviceModelVersion>
+                  <mes:runtimeName>0</mes:runtimeName>
+                  <mes:runtimeVersion>0</mes:runtimeVersion>
+                  
+                  <mes:originIp>0</mes:originIp>
+                  <!--Zero or more repetitions:-->
+                  <mes:extensionItems>
+                     <!--Optional:-->
+                     <com1:key>0</com1:key>
+                     <!--Optional:-->
+                     <com1:value>0</com1:value>
+                  </mes:extensionItems>
+                  <!--You may enter ANY elements at this point-->
+               </mes:origin>
+               <mes:originIp>0</mes:originIp>
+               <!--Zero or more repetitions:-->
+               <mes:extensionItems>
+                  <!--Optional:-->
+                  <com1:key>0</com1:key>
+                  <!--Optional:-->
+                  <com1:value>0</com1:value>
+               </mes:extensionItems>
+               <!--You may enter ANY elements at this point-->
+               <mes:osaSuiteVersion>0</mes:osaSuiteVersion>
+            </mes:clientInfo>
+            <mes:securityToken>
+               <Assertion Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </mes:securityToken>
+            <mes:correlationId>
+               <!--Optional:-->
+               <com1:id>0</com1:id>
+               <!--Zero or more repetitions:-->
+               <com1:extensionItems>
+                  <!--Optional:-->
+                  <com1:key>0</com1:key>
+                  <!--Optional:-->
+                  <com1:value>0</com1:value>
+               </com1:extensionItems>
+            </mes:correlationId>
+            <!--Zero or more repetitions:-->
+            <mes:extensionItems>
+               <!--Optional:-->
+               <com1:key>0</com1:key>
+               <!--Optional:-->
+               <com1:value>0</com1:value>
+            </mes:extensionItems>
+            <mes:productId>
+               <!--Optional:-->
+               <com1:id>0</com1:id>
+               <!--Zero or more repetitions:-->
+               <com1:extensionItems>
+                  <!--Optional:-->
+                  <com1:key>0</com1:key>
+                  <!--Optional:-->
+                  <com1:value>0</com1:value>
+               </com1:extensionItems>
+            </mes:productId>
+            <mes:noCache>0</mes:noCache>
+            <!--You may enter ANY elements at this point-->
+         </com:requestInfo>
+         <!--Zero or more repetitions:-->
+         <urm:userId>
+            <!--Optional:-->
+            <com1:id>educ1@nitk.nj</com1:id>
+            <!--Zero or more repetitions:-->
+            <com1:extensionItems>
+               <!--Optional:-->
+               <com1:key>0</com1:key>
+               <!--Optional:-->
+               <com1:value>0</com1:value>
+            </com1:extensionItems>
+         </urm:userId>
+      </urm:getRightsForUser>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b0510cd2-c336-49da-afce-5aab83e2ee07" name="SOAP Response"/><con:credentials><con:username/><con:password/><con:domain/><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.wolterskluwer.com/urm/Authorization/getRightsForUser"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="Prep getPreferences" id="f9ec86ee-792a-48fd-a1c7-c4a8a1f0bb68"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="false" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="true"><con:name>authentication token</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>getActiveSession - Request 1</con:sourceStep><con:sourcePath>declare namespace saml2='urn:oasis:names:tc:SAML:2.0:assertion';
 //saml2:Assertion</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>getPreferences - Request 1</con:targetStep><con:targetPath>declare namespace saml2='urn:oasis:names:tc:SAML:2.0:assertion';
 //saml2:Assertion</con:targetPath><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" id="6cdb60c3-a018-453e-be3d-006f3b7575b3" name="getPreferences - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PreferencesSoapBinding</con:interface><con:operation>getPreferences</con:operation><con:request name="getPreferences - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="c3b775c7-fa6f-4289-887a-ff574c04e688"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://89.189.218.15:8082/spore_Dev/osa115/rsi/Preferences.svc</con:endpoint><con:request><![CDATA[<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <s:Header>
@@ -35059,20 +37391,20 @@
                     <saml2:Assertion IssueInstant="2014-02-21T10:25:32.165Z" Version="2.0" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
                <saml2:Issuer>urn:com.wolterskluwer:default</saml2:Issuer>
                <saml2:Subject>
-                  <saml2:NameID>c643c901-758b-45fc-b484-9015bed7d923</saml2:NameID>
+                  <saml2:NameID>75d32d9d-3acf-43cd-9bec-c049609be895</saml2:NameID>
                   <saml2:SubjectConfirmation>
-                     <saml2:SubjectConfirmationData NotOnOrAfter="2015-05-15T12:14:29.3106061+02:00"/>
+                     <saml2:SubjectConfirmationData NotOnOrAfter="2015-05-18T16:37:21.4888539+02:00"/>
                   </saml2:SubjectConfirmation>
                </saml2:Subject>
                <saml2:Conditions>
                   <saml2:OneTimeUse/>
                </saml2:Conditions>
-               <saml2:AuthnStatement AuthnInstant="2015-05-15T11:44:29.3106061+02:00" SessionIndex="c643c901-758b-45fc-b484-9015bed7d923" SessionNotOnOrAfter="2015-05-15T12:14:29.3106061+02:00">
+               <saml2:AuthnStatement AuthnInstant="2015-05-18T16:07:21.4888539+02:00" SessionIndex="75d32d9d-3acf-43cd-9bec-c049609be895" SessionNotOnOrAfter="2015-05-18T16:37:21.4888539+02:00">
                   <saml2:AuthnContext/>
                </saml2:AuthnStatement>
                <saml2:AttributeStatement>
                   <saml2:Attribute Name="urn:com.wolterskluwer:default:loginId">
-                     <saml2:AttributeValue xsi:type="xsd:string">testanv1@nitk.nj</saml2:AttributeValue>
+                     <saml2:AttributeValue xsi:type="xsd:string">educ1@nitk.nj</saml2:AttributeValue>
                   </saml2:Attribute>
                   <saml2:Attribute Name="urn:com.wolterskluwer:default:name">
                      <saml2:AttributeValue xsi:nil="true"/>
@@ -35223,20 +37555,20 @@
 					<Assertion Version="2.0" IssueInstant="2015-05-14T11:01:46.7978253+02:00" xmlns="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                <Issuer>urn:com.wolterskluwer:default</Issuer>
                <Subject>
-                  <NameID>c643c901-758b-45fc-b484-9015bed7d923</NameID>
+                  <NameID>75d32d9d-3acf-43cd-9bec-c049609be895</NameID>
                   <SubjectConfirmation>
-                     <SubjectConfirmationData NotOnOrAfter="2015-05-15T12:14:29.3106061+02:00"/>
+                     <SubjectConfirmationData NotOnOrAfter="2015-05-18T16:37:21.4888539+02:00"/>
                   </SubjectConfirmation>
                </Subject>
                <Conditions>
                   <OneTimeUse/>
                </Conditions>
-               <AuthnStatement AuthnInstant="2015-05-15T11:44:29.3106061+02:00" SessionIndex="c643c901-758b-45fc-b484-9015bed7d923" SessionNotOnOrAfter="2015-05-15T12:14:29.3106061+02:00">
+               <AuthnStatement AuthnInstant="2015-05-18T16:07:21.4888539+02:00" SessionIndex="75d32d9d-3acf-43cd-9bec-c049609be895" SessionNotOnOrAfter="2015-05-18T16:37:21.4888539+02:00">
                   <AuthnContext/>
                </AuthnStatement>
                <AttributeStatement>
                   <Attribute Name="urn:com.wolterskluwer:default:loginId">
-                     <AttributeValue xsi:type="xsd:string">testanv1@nitk.nj</AttributeValue>
+                     <AttributeValue xsi:type="xsd:string">educ1@nitk.nj</AttributeValue>
                   </Attribute>
                   <Attribute Name="urn:com.wolterskluwer:default:name">
                      <AttributeValue xsi:nil="true"/>
